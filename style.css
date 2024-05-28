@@ -1,0 +1,44 @@
+/* * {
+  outline: 4px solid green !important;
+} */
+
+body {
+  margin: 0;
+}
+
+#main_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(15, 23, 42);
+  height: 100vh;
+}
+
+#main_info {
+  font-family: "Manrope", sans-serif;
+}
+
+#main_info h1,
+h2 {
+  text-align: center;
+  color: rgb(226, 232, 240);
+}
+
+#main_info h1 {
+  font-size: 50px;
+  margin: 0 auto;
+}
+
+#main_info h2 {
+  margin: 1px auto;
+}
+
+#info {
+  height: 100vh;
+}
+
+#scroll_down_arrow {
+  position: absolute;
+  bottom: 0;
+  height: 100px;
+}
