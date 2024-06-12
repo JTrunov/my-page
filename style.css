@@ -2,13 +2,13 @@
   outline: 4px solid green !important;
 } */
 
-html {
-  height: 100vh;
-}
-
-body {
+* {
   margin: 0;
   padding: 0;
+}
+
+html {
+  height: 100vh;
 }
 
 .main-container {
@@ -40,6 +40,42 @@ body {
 }
 .github-button-hover {
   background-position: 49%;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    height: 100%;
+  }
+
+  .main-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 5px;
+    position: relative;
+    background: #0f172a; /* fallback for old browsers */
+    background: linear-gradient(
+      135deg,
+      rgba(253, 187, 45, 1) 20%,
+      rgba(216, 109, 38, 1) 40%,
+      rgba(178, 31, 31, 1) 60%,
+      rgba(26, 42, 108, 1) 80%
+    );
+    background-size: 400%;
+    animation: gradient-animation 8s infinite alternate ease;
+  }
+
+  @keyframes gradient-animation {
+    0% {
+      background-position: right;
+    }
+
+    100% {
+      background-position: left;
+    }
+  }
 }
 
 .main-info {
