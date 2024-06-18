@@ -1,6 +1,7 @@
 const telegramButton = document.getElementsByClassName("telegram-button")[0];
 const mailButton = document.getElementsByClassName("mail-button")[0];
 const githubButton = document.getElementsByClassName("github-button")[0];
+const cvButton = document.getElementsByClassName("cv-button")[0];
 let buttonInfo = document.getElementsByClassName("button-info")[0];
 let mainContainer = document.getElementsByClassName("main-container")[0];
 
@@ -13,6 +14,7 @@ telegramButton.addEventListener("mouseout", (e) => {
   mainContainer.className = "main-container";
   buttonInfo.style.visibility = "hidden";
 });
+
 mailButton.addEventListener("mouseover", (e) => {
   mainContainer.className = "main-container mail-button-hover";
   buttonInfo.textContent = "Mail";
@@ -22,12 +24,23 @@ mailButton.addEventListener("mouseout", (e) => {
   mainContainer.className = "main-container";
   buttonInfo.style.visibility = "hidden";
 });
+
 githubButton.addEventListener("mouseover", (e) => {
   mainContainer.className = "main-container github-button-hover";
   buttonInfo.textContent = "Github";
   buttonInfo.style.visibility = "visible";
 });
 githubButton.addEventListener("mouseout", (e) => {
+  mainContainer.className = "main-container";
+  buttonInfo.style.visibility = "hidden";
+});
+
+cvButton.addEventListener("mouseover", (e) => {
+  mainContainer.className = "main-container cv-button-hover";
+  buttonInfo.textContent = "Download my CV";
+  buttonInfo.style.visibility = "visible";
+});
+cvButton.addEventListener("mouseout", (e) => {
   mainContainer.className = "main-container";
   buttonInfo.style.visibility = "hidden";
 });

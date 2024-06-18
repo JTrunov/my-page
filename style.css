@@ -32,13 +32,16 @@ html {
 }
 
 .telegram-button-hover {
-  background-position: 15%;
+  background-position: 10%;
 }
 
 .mail-button-hover {
-  background-position: 30%;
+  background-position: 20%;
 }
 .github-button-hover {
+  background-position: 30%;
+}
+.cv-button-hover {
   background-position: 49%;
 }
 
